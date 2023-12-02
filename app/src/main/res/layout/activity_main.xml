@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
-    name="phoneView"
-    type="com.example.brand.ui.theme.PhoneViewModel" />
+
+        <variable
+            name="phoneView"
+            type="com.example.brand.ui.theme.PhoneViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,6 +16,7 @@
         tools:context=".ui.theme.MainActivity">
 
         <TextView
+            android:id="@+id/phone_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{phoneView.phoneBrand.brandType}"
